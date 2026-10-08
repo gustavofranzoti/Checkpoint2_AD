@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elenco | Atores e Atrizes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Atores e Atrizes</h1>
+    <p class="subtitulo">Busque pelo nome e encontre quem você procura.</p>
+
+    <label class="busca" for="busca">
+      <span class="busca__rotulo">Buscar ator ou atriz</span>
+      <input type="text" id="busca" placeholder="Digite um nome..." autocomplete="off" oninput="filtrar()">
+    </label>
+    <p class="contagem" id="contagem" aria-live="polite"></p>
+  </header>
+
+  <main>
+    <section class="grid" id="grid"></section>
+    <p class="vazio" id="vazio" hidden>Nenhum ator ou atriz encontrado com esse nome.</p>
+  </main>
+
+  <script src="dados.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
